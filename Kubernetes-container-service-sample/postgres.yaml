@@ -3,7 +3,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: postgresql
-  namespace: aib2b
+  namespace: marbong
   labels:
     app: gitlab
 spec:
@@ -17,7 +17,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: postgres-claim
-  namespace: aib2b
+  namespace: marbong
   labels:
     app: gitlab
 spec:
@@ -31,7 +31,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: postgresql
-  namespace: aib2b
+  namespace: marbong
   labels:
     app: gitlab
 spec:
